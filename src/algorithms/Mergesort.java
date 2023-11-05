@@ -19,13 +19,8 @@ public class Mergesort {
         int[] l = new int[mid];
         int[] r = new int[n - mid];
 
-        for (int i = 0; i < mid; i++) {
-            l[i] = arr[i];
-        }
-
-        for (int j = mid; j < n; j++) {
-            r[j - mid] = arr[j];
-        }
+        System.arraycopy(arr, 0, l, 0, mid);
+        System.arraycopy(arr, mid, r, 0, n - mid);
 
         sort(l, mid);
         sort(r, n - mid);
