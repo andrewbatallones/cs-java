@@ -4,10 +4,10 @@ import java.util.TreeMap;
 
 public class TreeMapEx {
     public static void main(String[] args) {
-        // We can kinda treat this as a minheap
+        // We can kinda treat this as a min heap
         TreeMap<Integer, String> map = new TreeMap<>();
 
-        // This will be updating the minheap
+        // This will be updating the min heap
         map.put(1, "one");
         map.put(5, "five");
         map.put(3, "three");
@@ -16,7 +16,7 @@ public class TreeMapEx {
         System.out.println(map.pollFirstEntry().getValue());
         System.out.println(map.pollFirstEntry().getValue());
 
-        // Add more to minheap
+        // Add more to min heap
         map.put(2, "two");
 
         // Should be able to poll correctly.
