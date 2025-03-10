@@ -12,7 +12,7 @@ public class PartitionArrayGivenPivot {
         Integer[] objArray = new Integer[array.length];
 
         for (int i = 0; i < array.length; i++) {
-            objArray[i] = Integer.valueOf(array[i]);
+            objArray[i] =array[i];
         }
 
         Utils.printArray(objArray);
